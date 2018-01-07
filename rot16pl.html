@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rot16  PL</title>
+
+    <script src="rot16pl.js" charset="utf-8"></script>
+
+
+</head>
+<body>
+<h1 style="text-align: center; font-size: 3em">Rot16pl</h1>
+
+
+
+<textarea id="text" rows="20" cols="50" style="display:block; margin-left: auto; margin-right: auto"></textarea>
+<button id="button1"  onclick="convert()" style="font-size: 16px; display:block;  margin-left: auto; margin-right: auto" >Code / Decode</button>
+
+
+
+<script>
+    function convert(){
+        var x = document.getElementById('text');
+        var str = x.value;
+
+
+
+        x.value = rot16(str,tab_rot16pl);
+    }
+
+
+
+</script>
+</body>
+</html>
